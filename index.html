@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -13,43 +13,52 @@
 
 </head>
 
-<body>
+<body class="body">
   <!-- верхний бар -->
-  <header class="main-nav-border">
+  <header class="page-header">
 
     <!--главная навигация-->
-    <div class="container main-nav-flex">
-      <nav class="main-nav-flex">
-        <a class="secondary-font logo logo-top" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-        <ul class="list main-nav-flex">
-          <li class="main-nav-link"><a class="link main-nav main-nav-up main-nav-on" href="./index.html">Студия</a></li>
-          <li class="main-nav-link"><a class="link main-nav main-nav-up" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="main-nav-link"><a class="link main-nav main-nav-up" href="">Контакты</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="flex-container">
+        <nav class="navigation flex-container">
+          <a class="logo logo--height page-header__logo" href="./index.html">Web<span
+              class="logo__wrapper">Studio</span>
+          </a>
+          <ul class="list flex-container">
+            <li class="navigation__item navigation__item--right-indent"><a
+                class="page-header__link link page-header__link--current-page" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation__item navigation__item--right-indent"><a class="page-header__link link"
+                href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation__item navigation__item--right-indent"><a class="page-header__link link"
+                href="">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <!-- контакты верхнего бара -->
-      <ul class="list contacts-top main-nav-flex">
-        <li class="main-nav-link">
-          <div class="icon-nav-up-item">
-            <a class="main-nav link main-nav-up main-nav-mail-tel" href="mailto:info@devstudio.com">
-              <svg class="icon-nav-up" width="16" height="12">
+        <!-- контакты верхнего бара -->
+        <ul class="contact-list contact-list--left-indent list flex-container">
+          <li class="contact-list__item contact-list__item--right-indent">
+
+            <a class="page-header__link page-header__link--second-color link" href="mailto:info@devstudio.com">
+              <svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/symbol-defs-mono.svg#icon-mail"></use>
               </svg>
               info@devstudio.com </a>
-          </div>
-        </li>
-        <li class="main-nav-link">
-          <div class="icon-nav-up-item">
-            <a class="main-nav link main-nav-up main-nav-mail-tel" href="tel:+380961111111">
-              <svg class="icon-nav-up" width="10" height="16">
+
+          </li>
+          <li class="contact-list__item contact-list__item--right-indent">
+
+            <a class="page-header__link page-header__link--second-color link" href="tel:+380961111111">
+              <svg class="contact-list__icon" width="10" height="16">
                 <use href="./images/symbol-defs-mono.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11 </a>
-          </div>
-        </li>
-      </ul>
+
+          </li>
+        </ul>
+      </div>
+
     </div>
   </header>
 
@@ -357,13 +366,13 @@
     <div class="container">
       <div class="address-footer-contacts">
         <address class="address-footer">
-          <a class="secondary-font logo logo-white" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+          <a class="logo" href="./index.html">Web<span class="logo__wrapper-revers">Studio</span></a>
           <ul class="list address-footer-list">
             <li><span class="link footer-contacts location-address">г. Киев, пр-т Леси Украинки, 26</span></li>
-            <li class="address-footer-mailto"><a class="link main-nav footer-contacts"
+            <li class="address-footer-mailto"><a class="link navigation footer-contacts"
                 href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="link main-nav footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="link navigation footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
         <div class="footer-contacts-container">
