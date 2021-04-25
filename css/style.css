@@ -687,6 +687,7 @@ ul {
   fill: var(--third-text-color);
 }
 
+/* форма модального окна */
 .modal-form {
   font-size: 12px;
   line-height: 1.16;
@@ -753,17 +754,6 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form__checkbox {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.modal-form__link {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--third-text-color);
-}
-
 .modal-form__conteiner-checkbox-button {
   display: flex;
   flex-direction: column;
@@ -771,7 +761,18 @@ ul {
   justify-content: center;
 }
 
-/* замена чекбокса в форме */
+.modal-form__checkbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modal-form__icon-checkbox:checked + .modal-form__checkbox-off {
+  background-color: var(--third-text-color);
+  background-image: url('../images/icon-check.svg');
+  background-size: contain;
+  background-origin: padding-box;
+  border: inherit;
+}
 
 .hidden {
   position: absolute;
@@ -793,17 +794,15 @@ ul {
   transition: var(--animation);
 }
 
-.modal-form__icon-checkbox:checked + .modal-form__checkbox-off {
-  background-color: var(--third-text-color);
-  background-image: url('../images/icon-check.svg');
-  background-size: contain;
-  background-origin: padding-box;
-  border: inherit;
-}
-
 .modal-form__agreement {
   font-size: 14px;
   line-height: 1.7;
+}
+
+.modal-form__link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--third-text-color);
 }
 
 /* js-скрипт модального окна */
